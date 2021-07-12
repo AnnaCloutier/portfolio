@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+	<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
 
-    <title>Anna Cloutier | Oh hi!</title>
+		<title>Anna Cloutier | Oh hi!</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
-		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+			<link href="style.css" rel="stylesheet" type="text/css" />
 
-  </head>
+	</head>
 
 
-  <body>
-<!-- Put all the HTML code for page here: text, images, containers -->
+	<body>
+
 		<header>
 
 			<div class="float-container">
 				<div class="float-title-one">
-					<img src="images/web-profile-pic.jpg" width="200" class = "image-circle" alt="Anna Cloutier">
+					<img src="images/web-profile-pic.jpg" width="200" class="image-circle" alt="Anna Cloutier">
 				</div>
 
 				<div class="float-title-two">
-					<h1>Anna Cloutier</h1>
-					<h2>Designer & Developer</h2>
+					<h1 class="title-name">Anna Cloutier</h1>
+					<h2 class="title-name">Designer & Developer</h2>
 				</div>
 			</div>
 
 		</header>
 
 
+		<nav id="navbar">
+			<a href="#welcome-section" class="nav-link">Welcome</a>
+			<a href="#bio" class="nav-link">About Me</a>
+			<a href="#projects" class="nav-link">Projects</a>
+			<a href="#contact" class="nav-link">Contact</a>
+		</nav>
+
+
 		<main>
-			<article>
+			<section id="welcome-section">
 				<div>
-					<h3>Oh hi, I'm Anna!</h3>
+					<h1>Oh hi, I'm Anna!</h1>
 				</div>
 
 				<div>
@@ -52,12 +60,12 @@
 						</ul>
 					</div>
 				</div>
-			</article>
+			</section>
 
 
-	<hr> <!-- this is a ruler -->
+	<hr>
 
-			<article>
+			<section id="bio">
 				<div>
 					<h3>A little more about me...</h3>
 				</div>
@@ -68,24 +76,42 @@
 
 					<p>Please send me a message if you're looking for a junior developer. I'm excited to learn more about what you do and how I can complete your team!</p>
 				</div>
-			</article>
+			</section>
 
+		<hr>
 
-		<hr> <!-- this is a ruler -->
+			<section id="projects">
+				<div>
+					<h3>Projects</h3>
+				</div>
 
-			<article>
+				<div class="project-tile">
+					<a href="https://annacloutier.github.io/hiker-survey-form/">Hiker Survey Form</a>
+				</div>
+
+				<div class="project-tile">
+					<a href="https://annacloutier.github.io/succulents-product-page/">Succulents Product Page</a>
+				</div>
+
+				<div class="project-tile">
+					<a href="https://codepen.io/DraginflyA/pen/bGqLqzP">Alphonse Mucha Tribute Page</a>
+				</div>
+			</section>
+
+		<hr>
+
+			<section id="contact">
 				<div>
 					<h3>Please get in touch</h3>
 				</div>
 				<div class="center-list">
 					<ol>
 						<li><a href="mailto:anna.clouter.nh@gmail.com">Email Me</a></li>
-						<li><a href="https://github.com/AnnaCloutier">GitHub</a></li>
+						<li><a href="https://github.com/AnnaCloutier" id="profile-link" target="_blank">GitHub</a></li>
 						<li><a href="https://www.linkedin.com/in/annacloutier/">LinkedIn</a></li>
 					</ol>
 				</div>
-			</article>
-			<!-- links for linkedIn, GitHub, email -->
+			</section>
 
 
 		</main>

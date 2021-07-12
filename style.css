@@ -1,24 +1,12 @@
-* {
-  box-sizing: border-box;
-}
-
-/*Some mentor help here to make my containers work side by side */
+/* classes */
 
 .float-container {
 	background-color: #656C5C;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-
-/*
-@media only screen and (max-width: 500px) {
-  flex-direction: column;
-}
-*/
-
-/* this doesn't seem to work with repl.it */
 
 .float-title-one {
 	width: 35%;
@@ -32,7 +20,7 @@
 	width: 60%;
 	display: inline-block;
 	margin-top: 10px;
-	background-color: #656C5C;
+	background-color: transparent;
 }
 
 
@@ -40,6 +28,21 @@
 	border-radius: 50%;
 }
 
+
+
+.title-name {
+	line-height: 6%;
+	color: #C6C62F;
+	font-family: Garamond, Georgia, serif;
+	text-align: left;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 img {
 	border: 1px solid #C6C62F;
@@ -74,14 +77,6 @@ main {
 }
 
 
-h1, h2 {
-	line-height: 6%;
-	color: #C6C62F;
-	font-family: Garamond, Georgia, serif;
-	text-align: left;
-}
-
-
 h1 {
 	font-size: 48px;
 }
@@ -98,16 +93,19 @@ h4 {
 }
 
 
-h3, h4, p, {
+h3, h4, p {
 	color: #2E1C18;
 	text-align: center;
 }
 
 
-/* move all the text over a bit */
-article {
+
+/* move text over a bit */
+section {
 	margin-left: 50px;
 	margin-right: 50px;
+	min-height: 100vh;
+	min-width: 100vw;
 }
 
 
@@ -116,7 +114,7 @@ a:link {
 	color: #2E1C18;
 }
 a:visited {
-	color: #656C5C;
+	color: #2E1C18;
 }
 a:hover {
 	color: #AC7985;
@@ -127,3 +125,24 @@ footer {
 	padding: 10px;
 	color: #C6C62F;
 }
+
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+	body {
+		flex-direction: column;
+	}
+
+	.float-container {
+		background-color: #656C5C;
+		display: grid;
+		align-items: center;
+	}
+
+	.title-name {
+		display: grid;
+		margin-top: 10px;
+		background-color: transparent;
+	}
+}
+
